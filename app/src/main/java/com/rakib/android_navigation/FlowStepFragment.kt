@@ -40,7 +40,7 @@ class FlowStepFragment : Fragment() {
         next_button.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_next)
         )
-        Toast.makeText(activity,name,Toast.LENGTH_SHORT).show()
+//        Toast.makeText(activity,name,Toast.LENGTH_SHORT).show()
     }
 
 }

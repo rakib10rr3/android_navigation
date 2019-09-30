@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/flow_step_one_dest"
         android:name="com.rakib.android_navigation.FlowStepFragment"
-        android:label="fragment_flow_step"
+        android:label="Flow one"
         tools:layout="@layout/fragment_flow_step_one">
         <action
             android:id="@+id/action_next"
@@ -32,18 +32,18 @@
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <argument
             android:name="flowStepNumber"
-            app:argType="integer"
-            android:defaultValue="1" />
+            android:defaultValue="1"
+            app:argType="integer" />
         <argument
             android:name="testName"
-            app:argType="string"
-            android:defaultValue="one" />
+            android:defaultValue="one"
+            app:argType="string" />
 
     </fragment>
     <fragment
         android:id="@+id/flow_step_two_dest"
         android:name="com.rakib.android_navigation.FlowStepFragment"
-        android:label="fragment_flow_step"
+        android:label="Flow Two"
         tools:layout="@layout/fragment_flow_step_two">
         <action
             android:id="@+id/action_next"
@@ -51,18 +51,22 @@
             app:popUpTo="@+id/home_dest" />
         <argument
             android:name="flowStepNumber"
-            app:argType="integer"
-            android:defaultValue="2" />
+            android:defaultValue="2"
+            app:argType="integer" />
         <argument
             android:name="testName"
-            app:argType="string"
-            android:defaultValue="two" />
-
+            android:defaultValue="two"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.rakib.android_navigation.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/deeplink_dest"
+        android:name="com.rakib.android_navigation.DeepLinkFragment"
+        android:label="fragment_deep_link"
+        tools:layout="@layout/fragment_deep_link" />
 
 </navigation>
